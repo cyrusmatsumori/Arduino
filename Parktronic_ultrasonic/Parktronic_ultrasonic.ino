@@ -1,8 +1,8 @@
 //ULTRASONIC
 #include <Ultrasonic.h>
 
-#define echoPin 7 // Echo Pin
-#define trigPin 8 // Trigger Pin
+#define echoPin 13 // Echo Pin
+#define trigPin 12 // Trigger Pin
 #define LEDPin 13 // Onboard LED
 int maximumRange = 200; // Maximum range needed
 int minimumRange = 0; // Minimum range needed
@@ -276,7 +276,8 @@ void loop()
 delay(50); //Delay 50ms before next reading.
 
   Display(1, 0); 
-  Display(2, 8);
+  Display(2, 234/100);
   Display(3, 0);
   Display(4, 9);
+
 }
